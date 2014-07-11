@@ -3,29 +3,19 @@
 */
 
 /*
- * Mixing for mobile first queries.
- * Two breakpoints.
-@media screen and (min-width: 48em) {
- *  ***Styles***
- * }
+ * Media queries
  *
- */
+*/
 
-@mixin break($point) {
-  @if $point == not-small {
-    @media screen and (min-width: 48em) {
-      @content;
-    }
-  }
-  @else if $point == medium {
-    @media screen and (min-width: 48em) and (max-width: 64em) {
-      @content;
-    }
-  }
-  @else if $point == large {
-    @media screen and (min-width: 64em)  {
-      @content;
-    }
-  }
+@media screen and (min-width: 48em) {
+
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+
+}
+
+@media screen and (min-width: 64em)  {
+
 }
 
