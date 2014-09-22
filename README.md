@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-queries)
 ## File Size
 
 194B queries.css
-0B Juqueries.min.css
+0B Juqueries.min.css 
+29B minified and gzipped
 
 ## The Code
 ```
