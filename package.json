@@ -1,7 +1,7 @@
 {
   "name": "css-queries",
   "style": "queries.css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "http://github.com/mrmrs/css-queries",
   "description": "Css module of single purpose classes for queries",
   "keywords": [
