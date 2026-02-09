@@ -1,38 +1,44 @@
 {
   "name": "css-queries",
-  "style": "queries.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-queries",
-  "description": "Css module of single purpose classes for queries",
+  "version": "2.0.0",
+  "description": "Functional CSS for queries",
+  "style": "dist/queries.css",
+  "main": "dist/queries.css",
+  "exports": {
+    ".": "./dist/queries.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "queries"
+    "queries",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-queries": {
+  "homepage": "https://github.com/mrmrs/css-queries",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-queries.git"
+    "url": "https://github.com/mrmrs/css-queries.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-queries/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-queries/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
